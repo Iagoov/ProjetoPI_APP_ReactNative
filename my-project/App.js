@@ -6,14 +6,14 @@ import { NavigationContainer, DrawerActions, useFocusEffect } from '@react-navig
 
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-import Home from './components/Home/Home';
-import Login from './components/Login/Login';
-import MetAgua from './components/MetAgua/MetAgua';
-import Cadastro from './components/Login/Cadastro';
-import TelaInicial from './components/TelaInicial/TelaInicial';
-import TelaObjetivo from './components/TelaObjetivo/TelaObjetivo';
-import CalculadoraIMC from './components/CalculadoraIMC/CalculadoraIMC';
-import Desenvolvimento from './components/Desenvolvimento/Desenvolvimento';
+import Home from './src/components/Home/Home';
+import Login from './src/components/Login/Login';
+import MetAgua from './src/components/MetAgua/MetAgua';
+import Cadastro from './src/components/Login/Cadastro';
+import TelaInicial from './src/components/TelaInicial/TelaInicial';
+import TelaObjetivo from './src/components/TelaObjetivo/TelaObjetivo';
+import CalculadoraIMC from './src/components/CalculadoraIMC/CalculadoraIMC';
+import Desenvolvimento from './src/components/Desenvolvimento/Desenvolvimento';
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
@@ -31,7 +31,7 @@ const CustomHeader = ({ navigation, route }) => {
     },
     headerLeft: () => (
       <TouchableOpacity onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-        <Image source={require('./components/Home/Imagens/Menu.png')} style={{ marginLeft: 10 }} />
+        <Image source={require('./src/components/Home/Imagens/Menu.png')} style={{ marginLeft: 10 }} />
       </TouchableOpacity>
     ),
   };

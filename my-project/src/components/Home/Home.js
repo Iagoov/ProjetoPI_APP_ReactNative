@@ -20,10 +20,10 @@ const Home = () => {
                 <View style={styles.rectangle}>
                     <Text style={styles.textoAgua}>Já tomou água hoje?</Text>
                     <Image source={require('./Imagens/Agua.png')} />
-                    <Text>Registre sua meta diaria!</Text>
+                    <Text>Registre sua meta diária!</Text>
 
                     <TouchableOpacity style={styles.button} onPress={handlePage}>
-                        <Text style={styles.buttonText}>Adicionar</Text>
+                        <Text style={styles.buttonText}>Registrar</Text>
                     </TouchableOpacity>
                 </View>
             </View>
